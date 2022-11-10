@@ -3370,7 +3370,7 @@ Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
                         if (setbot.templateImage) {
                         kagura.send5ButImg(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉y _HumanzzZ_`, global.thumb, btn)
                         } else if (setbot.templateGif) {
-                        kagura.send5ButGif(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 _HumanzzZ_, global.visoka, btn)
+                        kagura.send5ButGif(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 _HumanzzZ_`, global.visoka, btn)
                         } else if (setbot.templateVid) {
                         kagura.send5ButVid(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 _HumanzzZ_`, global.visoka, btn)
                         } else if (setbot.templateMsg) {
