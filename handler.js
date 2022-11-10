@@ -2994,7 +2994,7 @@ let capt = `⭔ Title: ${judul}
                 setbot.templateImage = true
                 setbot.templateVideo = false
                 setbot.templateGif = false
-                setbot.templateMsg = false
+                setbot.templateMsg = true
                 m.reply(mess.success)
                 } else if (args[0] === 'templateVideo'){
                 setbot.templateImage = false
@@ -3057,7 +3057,7 @@ case 'fiturlist': {
                 ]
                 },
                 ]
-                kagura.sendListMsg(m.chat, `Saya ${ownername} ini adalah List Menu Bot Whatsapp Simple !!`, `© Created By ${ownername}`, `Hai ${pushname}👋 *Selamat ${salam}*`, `Click Here`, sections, m)
+                kagura.sendListMsg(m.chat, `Saya ${ownername} ini adalah List Menu Bot Whatsapp Simple !!`, `© Created By HumanzzZ`, `Hai ${pushname}👋 *Selamat ${salam}*`, `Click Here`, sections, m)
                 }
             }
             break
@@ -3348,7 +3348,7 @@ Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 822-7991-5237'
+                                    phoneNumber: '+62 888-0494-7282'
                                 }
                             },{
                                 quickReplyButton: {
@@ -3368,13 +3368,13 @@ Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
                             }]
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
-                        kagura.send5ButImg(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.thumb, btn)
+                        kagura.send5ButImg(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉y _HumanzzZ_`, global.thumb, btn)
                         } else if (setbot.templateGif) {
-                        kagura.send5ButGif(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.visoka, btn)
+                        kagura.send5ButGif(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 _HumanzzZ_, global.visoka, btn)
                         } else if (setbot.templateVid) {
-                        kagura.send5ButVid(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.visoka, btn)
+                        kagura.send5ButVid(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 _HumanzzZ_`, global.visoka, btn)
                         } else if (setbot.templateMsg) {
-                        kagura.send5ButMsg(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, btn)
+                        kagura.send5ButMsg(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 _HumanzzZ_`, btn)
                         }
                      }
             break
