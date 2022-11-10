@@ -93,14 +93,14 @@ module.exports = kagura = async (kagura, m, chatUpdate, store) => {
             if (typeof setting !== 'object') global.db.data.settings[botNumber] = {}
 	    if (setting) {
 		if (!isNumber(setting.status)) setting.status = 0
-		if (!('autobio' in setting)) setting.autobio = false
+		if (!('autobio' in setting)) setting.autobio = true
 		if (!('templateImage' in setting)) setting.templateImage = true
 		if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = false
 		if (!('templateMsg' in setting)) setting.templateMsg = false	
 	    } else global.db.data.settings[botNumber] = {
 		status: 0,
-		autobio: false,
+		autobio: true,
 		templateImage: true,
 		templateVideo: false,
 		templateGif: false,
@@ -139,7 +139,7 @@ module.exports = kagura = async (kagura, m, chatUpdate, store) => {
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await kagura.setStatus(`${kagura.user.name} | Runtime : ${runtime(uptime)}`)
+		await kagura.setStatus(`Sung Jinwoo Aktif Selama : ${uptime} | Create By HumanzzZ😎`)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -3057,7 +3057,7 @@ case 'fiturlist': {
                 ]
                 },
                 ]
-                kagura.sendListMsg(m.chat, `Saya Assisten ${ownername} ini adalah List Menu Bot Whatsapp Simple !!`, `© Created By ${ownername}`, `Hai ${pushname}👋 *Selamat ${salam}*`, `Click Here`, sections, m)
+                kagura.sendListMsg(m.chat, `Saya ${ownername} ini adalah List Menu Bot Whatsapp Simple !!`, `© Created By ${ownername}`, `Hai ${pushname}👋 *Selamat ${salam}*`, `Click Here`, sections, m)
                 }
             }
             break
@@ -3067,8 +3067,7 @@ Saya *${botname}*, Bot Ini Adalah Beta Multi-Device WhatsApp.
 Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
 ──────────────
   _> *INFO BOT*_
-👑 Creator : *Lexxy Official*
-👤 Owner : *${ownername}*
+👑 Creator : *HumanzzZ*
 🤖 Bot Name : *${botname}*
 📑 Tanggal : *${tanggal}*
 ⏰ Waktu : *${time}*
